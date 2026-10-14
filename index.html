@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+
+    <!--
+      TODO: replace villadhanika.com with the real domain before launch.
+      It appears in four places: the canonical link, og:url, og:image,
+      and the JSON-LD "url" field.
+    -->
+    <title>Villa Dhanika — Villa in Canggu, Bali</title>
+    <meta
+      name="description"
+      content="Villa Dhanika is a contemporary six-bedroom villa for up to 14 guests in Batu Bolong, Canggu, with an Olympic-size pool, rice field views and in-villa spa treatments."
+    />
+    <link rel="canonical" href="https://villadhanika.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Villa Dhanika" />
+    <meta property="og:title" content="Villa Dhanika — Villa in Canggu, Bali" />
+    <meta
+      property="og:description"
+      content="A private oasis on the edge of Canggu's rice fields. Six bedrooms, up to 14 guests, Olympic-size pool and in-villa wellness."
+    />
+    <meta property="og:url" content="https://villadhanika.com/" />
+    <meta property="og:image" content="https://villadhanika.com/og-image.jpg" />
+    <meta property="og:image:alt" content="Villa Dhanika at dusk, seen across its Olympic-size pool" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Villa Dhanika — Villa in Canggu, Bali" />
+    <meta
+      name="twitter:description"
+      content="A private oasis on the edge of Canggu's rice fields. Six bedrooms, up to 14 guests, Olympic-size pool and in-villa wellness."
+    />
+    <meta name="twitter:image" content="https://villadhanika.com/og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Villa Dhanika",
+        "description": "Contemporary six-bedroom private villa for up to 14 guests in Batu Bolong, Canggu, Bali.",
+        "url": "https://villadhanika.com/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Batu Bolong",
+          "addressLocality": "Canggu",
+          "addressRegion": "Bali",
+          "addressCountry": "ID"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": -8.6553, "longitude": 115.1308 },
+        "numberOfRooms": 6,
+        "maximumAttendeeCapacity": 14,
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Olympic-size swimming pool", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Jacuzzi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Gym", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "In-villa spa treatments", "value": true }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
