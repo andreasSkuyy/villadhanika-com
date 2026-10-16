@@ -32,32 +32,32 @@ export const villa = {
   ] satisfies GalleryImage[],
 
   facts: [
-    { icon: 'MapPin',    label: 'Location',       value: 'Batu Bolong, Canggu, Bali.' },
-    { icon: 'Users',     label: 'Capacity',       value: '14 people (5 ensuite air-conditioned bedrooms: 3 with king-sized beds, 2 with twins, and 1 convertible entertainment room with arrangement for 4 beds).' },
-    { icon: 'Waves',     label: 'Pool',           value: 'Olympic-size with wading area and adjacent jacuzzi.' },
-    { icon: 'Sofa',      label: 'Living Areas',   value: 'Lounge room; expansive dining area; entertainment room; reception; open-sided pool cabana; rooftop lounge; sun decks with sun loungers and daybeds.' },
-    { icon: 'UserCheck', label: 'Staff',          value: 'Villa Manager; 4 villa attendants; 2 security staff.' },
-    { icon: 'Ruler',     label: 'Property Area',  value: '1650sqm (villa), 1749sqm land.' },
-    { icon: 'Wifi',      label: 'Communication',  value: 'WiFi internet access throughout the villa.' },
-    { icon: 'ShieldCheck', label: 'Managed & Marketed by', value: 'The Elite Havens Group.' },
+    { icon: 'MapPin', label: 'Location', value: 'Batu Bolong, Canggu, Bali.' },
+    { icon: 'Users', label: 'Capacity', value: '14 people (5 ensuite air-conditioned bedrooms: 3 with king-sized beds, 2 with twins, and 1 convertible entertainment room with arrangement for 4 beds).' },
+    { icon: 'Waves', label: 'Pool', value: 'Olympic-size with wading area and adjacent jacuzzi.' },
+    { icon: 'Sofa', label: 'Living Areas', value: 'Lounge room; expansive dining area; entertainment room; reception; open-sided pool cabana; rooftop lounge; sun decks with sun loungers and daybeds.' },
+    { icon: 'UserCheck', label: 'Staff', value: 'Villa Manager; 4 villa attendants; 2 security staff.' },
+    { icon: 'Ruler', label: 'Property Area', value: '1650sqm (villa), 1749sqm land.' },
+    { icon: 'Wifi', label: 'Communication', value: 'WiFi internet access throughout the villa.' },
+    { icon: 'ShieldCheck', label: 'Managed & Marketed by', value: 'WinniWonka' },
   ] satisfies Fact[],
 
   rooms: [
-    { name: 'Master Bedrooms',    description: 'Three ensuite bedrooms with king-sized beds, air conditioning and garden doors onto the rice fields.', image: 'king_bedroom.webp', alt: 'King-sized bed beneath a display of black woven discs, with garden doors and an ikat hanging' },
-    { name: 'Twin Bedrooms',      description: 'Two ensuite bedrooms with cane-headboard twin beds and built-in rattan wardrobes, ideal for children or friends sharing.', image: 'twin_bedroom.webp', alt: 'Two single beds with cane headboards and green cushions, framed by rattan wardrobe doors' },
-    { name: 'Lounge Room',        description: 'Deep linen sofas beneath a woven timber ceiling, opening on both sides to the garden.', image: 'entertain_room.webp', alt: 'Lounge with deep linen sofas under a woven ceiling, opening to the garden' },
-    { name: 'Dining Pavilion',    description: 'A seven-metre wood dining table seating sixteen, beneath a suspended rattan sculpture and soaring thatched roof.', image: 'dining_pavillion.webp', alt: 'Long wood dining table seating sixteen beneath a suspended rattan sculpture and thatched roof' },
-    { name: 'Rooftop Cabana',     description: 'Thatched lounge with a daybed and armchairs on a timber deck, looking straight across the rice fields.', image: 'rooftop_cabana.webp', alt: 'Thatched cabana with a daybed and armchairs on a timber deck, looking across the rice fields' },
-    { name: 'Pool Cabana',        description: 'Open-sided cabana lit at dusk beside the Olympic-size pool, on the edge of the rice fields.', image: 'pool_cabana.webp', alt: 'Lit pool cabana beside the swimming pool at dusk, with the rice fields behind' },
+    { name: 'Master Bedrooms', description: 'Three ensuite bedrooms with king-sized beds, air conditioning and garden doors onto the rice fields.', image: 'king_bedroom.webp', alt: 'King-sized bed beneath a display of black woven discs, with garden doors and an ikat hanging' },
+    { name: 'Twin Bedrooms', description: 'Two ensuite bedrooms with cane-headboard twin beds and built-in rattan wardrobes, ideal for children or friends sharing.', image: 'twin_bedroom.webp', alt: 'Two single beds with cane headboards and green cushions, framed by rattan wardrobe doors' },
+    { name: 'Lounge Room', description: 'Deep linen sofas beneath a woven timber ceiling, opening on both sides to the garden.', image: 'entertain_room.webp', alt: 'Lounge with deep linen sofas under a woven ceiling, opening to the garden' },
+    { name: 'Dining Pavilion', description: 'A seven-metre wood dining table seating sixteen, beneath a suspended rattan sculpture and soaring thatched roof.', image: 'dining_pavillion.webp', alt: 'Long wood dining table seating sixteen beneath a suspended rattan sculpture and thatched roof' },
+    { name: 'Rooftop Cabana', description: 'Thatched lounge with a daybed and armchairs on a timber deck, looking straight across the rice fields.', image: 'rooftop_cabana.webp', alt: 'Thatched cabana with a daybed and armchairs on a timber deck, looking across the rice fields' },
+    { name: 'Pool Cabana', description: 'Open-sided cabana lit at dusk beside the Olympic-size pool, on the edge of the rice fields.', image: 'pool_cabana.webp', alt: 'Lit pool cabana beside the swimming pool at dusk, with the rice fields behind' },
   ] satisfies Room[],
 
   facilities: [
-    { icon: 'Tv',       label: 'Entertainment',        description: '34-inch cable/smart flat-screen TV in all bedrooms; 98-inch cable/smart flat-screen TV in Entertainment Room; complimentary outdoor theatre complete with beanbags set up by the pool on request; audio system with Bose speakers throughout indoor and outdoor living areas of the villa.' },
-    { icon: 'Dumbbell', label: 'Gym',                  description: 'Gym with cross trainer, treadmill and weights.' },
-    { icon: 'Wifi',     label: 'Communication',        description: 'WiFi internet access throughout the villa.' },
-    { icon: 'Car',      label: 'Transport',            description: 'Safe and reasonably priced metered taxis are easily available; and full day or half-day car and driver hire can be arranged via your Villa Manager (additional costs apply).' },
+    { icon: 'Tv', label: 'Entertainment', description: '34-inch cable/smart flat-screen TV in all bedrooms; 98-inch cable/smart flat-screen TV in Entertainment Room; complimentary outdoor theatre complete with beanbags set up by the pool on request; audio system with Bose speakers throughout indoor and outdoor living areas of the villa.' },
+    { icon: 'Dumbbell', label: 'Gym', description: 'Gym with cross trainer, treadmill and weights.' },
+    { icon: 'Wifi', label: 'Communication', description: 'WiFi internet access throughout the villa.' },
+    { icon: 'Car', label: 'Transport', description: 'Safe and reasonably priced metered taxis are easily available; and full day or half-day car and driver hire can be arranged via your Villa Manager (additional costs apply).' },
     { icon: 'Sparkles', label: 'Additional Facilities', description: 'Barbecue; in-room safes; back-up generator.' },
-    { icon: 'Baby',     label: 'For Families',         description: 'With a choice of six bedrooms spread over two levels, there is plenty of space for everyone. Facilities include Nintendo, baby cot and high-chair; wading area in the pool; pool inflatables; pool fence on request (extra charge applies).' },
+    { icon: 'Baby', label: 'For Families', description: 'With a choice of six bedrooms spread over two levels, there is plenty of space for everyone. Facilities include Nintendo, baby cot and high-chair; wading area in the pool; pool inflatables; pool fence on request (extra charge applies).' },
   ] satisfies Facility[],
 
   wellness: {
@@ -68,15 +68,15 @@ export const villa = {
       'Indulge in complete wellness during your stay at Villa Dhanika. Guests staying at the villa can choose from a variety of dermal treatments offered at Dermaster Clinic Seminyak, renowned for its radiance therapies.',
     ] as string[],
     treatments: [
-      { name: 'Balinese Massage',  description: 'Release built up tension with a traditional Balinese massage. Using a combination of gentle stretches, acupressure and aromatherapy oils to stimulate the flow of blood, oxygen and energy around your body, you will feel totally relaxed in no time.' },
-      { name: 'Foot Reflexology',  description: 'Foot reflexology is a natural healing art based on the principle that there are reflexes in the feet which correspond to every part of the body. Through application of pressure on these reflexes tension is relieved and circulation improved leaving you feeling balanced.' },
+      { name: 'Balinese Massage', description: 'Release built up tension with a traditional Balinese massage. Using a combination of gentle stretches, acupressure and aromatherapy oils to stimulate the flow of blood, oxygen and energy around your body, you will feel totally relaxed in no time.' },
+      { name: 'Foot Reflexology', description: 'Foot reflexology is a natural healing art based on the principle that there are reflexes in the feet which correspond to every part of the body. Through application of pressure on these reflexes tension is relieved and circulation improved leaving you feeling balanced.' },
       { name: 'Manicure/Pedicure', description: 'Our hands and feet work hard for us every day but rarely get the attention they deserve. Treat them to a manicure or pedicure, which usually comes with the added bonus of a quick hand or foot massage.' },
-      { name: 'Body Scrub',        description: 'A full body scrub will exfoliate and hydrate your skin leaving it soft and smooth. A rejuvenating scrub combines an abrasive material such as salt, coffee, rice bran or pecan hulls with essential oils to remove any impurities and make your skin glow.' },
+      { name: 'Body Scrub', description: 'A full body scrub will exfoliate and hydrate your skin leaving it soft and smooth. A rejuvenating scrub combines an abrasive material such as salt, coffee, rice bran or pecan hulls with essential oils to remove any impurities and make your skin glow.' },
     ] satisfies Treatment[],
     offers: [
       { title: 'Complimentary Hydrafacial and More', description: 'Enjoy a complimentary Hydrafacial (worth IDR 2,750,000) when you stay for 5 nights or more at Villa Dhanika. For treatments exceeding IDR 10,000,000, we’ll include free transport to and from the clinic, ensuring a seamless spa experience.' },
-      { title: 'Personalised Doctor’s Visit',    description: 'For your ultimate convenience, spend a minimum of IDR 20,000,000 on villa treatments and receive a complimentary doctor’s visit at Villa Dhanika.' },
-      { title: 'Free Online Consultation',          description: 'Begin your wellness journey with a free online consultation with a skilled Dermaster doctor.' },
+      { title: 'Personalised Doctor’s Visit', description: 'For your ultimate convenience, spend a minimum of IDR 20,000,000 on villa treatments and receive a complimentary doctor’s visit at Villa Dhanika.' },
+      { title: 'Free Online Consultation', description: 'Begin your wellness journey with a free online consultation with a skilled Dermaster doctor.' },
     ] satisfies Offer[],
   },
 
@@ -122,9 +122,9 @@ export const villa = {
     /** From spreadsheet [70]. One paragraph. */
     intro: 'Villa Dhanika’s welcoming staff will look after you during your stay. All staff members are from the local area and will be happy to chat and share insider knowledge, but if you prefer a more discreet service let the Villa Manager know. It’s your holiday so your wish is our command.',
     roles: [
-      { icon: 'UserCheck',   role: 'Villa Manager',    description: 'Villa Dhanika’s full-time manager oversees day to day operations at the villa including guest service. They will coordinate your requirements with other staff and can arrange transport, a private chef, and take care of all your special requests, big and small. When not on site, they are available by phone around the clock.' },
-      { icon: 'Utensils',    role: 'Villa Attendants', description: 'From serving meals to cleaning and tidying rooms, friendly professional villa attendants are on hand to take care of all your needs.' },
-      { icon: 'ShieldCheck', role: 'Security',         description: 'Offer 24 hour security at the villa.' },
+      { icon: 'UserCheck', role: 'Villa Manager', description: 'Villa Dhanika’s full-time manager oversees day to day operations at the villa including guest service. They will coordinate your requirements with other staff and can arrange transport, a private chef, and take care of all your special requests, big and small. When not on site, they are available by phone around the clock.' },
+      { icon: 'Utensils', role: 'Villa Attendants', description: 'From serving meals to cleaning and tidying rooms, friendly professional villa attendants are on hand to take care of all your needs.' },
+      { icon: 'ShieldCheck', role: 'Security', description: 'Offer 24 hour security at the villa.' },
     ] satisfies StaffRole[],
   },
 
