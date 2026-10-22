@@ -14,7 +14,7 @@ export default function WhatsAppFab({
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
-      className={`group fixed right-5 bottom-5 z-50 flex items-center gap-3 transition-opacity duration-300 ${
+      className={`group fixed right-5 bottom-20 z-50 flex items-center gap-3 transition-opacity duration-300 md:bottom-24 ${
         visible ? 'opacity-100' : 'pointer-events-none invisible opacity-0'
       }`}
     >

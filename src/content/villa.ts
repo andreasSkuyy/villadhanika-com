@@ -4,7 +4,7 @@ import type {
 
 export const villa = {
   name: 'Villa Dhanika',
-  tagline: 'A private oasis on the edge of Canggu’s rice fields',
+  tagline: 'A Spacious Private Retreat in the Heart of Canggu',
   address: 'Batu Bolong, Canggu — Bali',
 
   /** From spreadsheet [18] Introduction + [7] About Villa. Max 3 paragraphs. */

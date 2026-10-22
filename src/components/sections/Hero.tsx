@@ -11,56 +11,37 @@ const heroImages = Object.entries(
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, src]) => src as string)
 
-/** First image repeated at the end so the loop always slides forward, then snaps back. */
-const track = heroImages.length > 1 ? [...heroImages, heroImages[0]] : heroImages
-
 export default function Hero({ sentinel }: { sentinel: RefObject<HTMLDivElement | null> }) {
   const [slide, setSlide] = useState(0)
-  const [animate, setAnimate] = useState(true)
 
-  // Advance one slide; skip the frame where we silently snap from the clone back to slide 0.
+  // Modulo index, so the slide can never point past the last image (which rendered blank).
   useEffect(() => {
-    if (!animate || heroImages.length < 2) return
+    if (heroImages.length < 2) return
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
-    const id = setTimeout(() => setSlide((i) => i + 1), siteConfig.heroSlideMs)
+    const id = setTimeout(
+      () => setSlide((i) => (i + 1) % heroImages.length),
+      siteConfig.heroSlideMs,
+    )
     return () => clearTimeout(id)
-  }, [slide, animate])
-
-  // Re-enable the transition on the frame after the snap.
-  useEffect(() => {
-    if (animate) return
-    const id = requestAnimationFrame(() => setAnimate(true))
-    return () => cancelAnimationFrame(id)
-  }, [animate])
+  }, [slide])
 
   return (
     <section id="hero" className="relative h-[100svh] min-h-[560px] w-full overflow-hidden">
-      <div
-        className={`absolute inset-0 flex h-full ${
-          animate ? 'transition-transform duration-1000 ease-in-out' : ''
-        }`}
-        style={{ transform: `translateX(-${slide * 100}%)` }}
-        onTransitionEnd={() => {
-          if (slide === heroImages.length) {
-            setAnimate(false)
-            setSlide(0)
-          }
-        }}
-      >
-        {track.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt=""
-            width={2000}
-            height={1333}
-            loading={i === 0 ? 'eager' : 'lazy'}
-            fetchPriority={i === 0 ? 'high' : 'auto'}
-            decoding="async"
-            className="size-full shrink-0 object-cover"
-          />
-        ))}
-      </div>
+      {heroImages.map((src, i) => (
+        <img
+          key={i}
+          src={src}
+          alt=""
+          width={2000}
+          height={1333}
+          loading="eager"
+          fetchPriority={i === 0 ? 'high' : 'low'}
+          decoding="async"
+          className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ease-in-out ${
+            i === slide ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      ))}
       <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/25 to-ink/30" />
 
       <div className="relative mx-auto flex h-full max-w-6xl flex-col justify-end px-5 pb-24 md:px-8 md:pb-28">
