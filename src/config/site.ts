@@ -6,6 +6,9 @@ export const siteConfig = {
   address: 'Batu Bolong, Canggu, Bali, Indonesia',
   managedBy: 'WinniWonka',
   mapsUrl: 'https://www.google.com/maps/place/Villa+Dhanika/@-8.6494057,115.1369427,17z/data=!4m22!1m12!3m11!1s0x2dd23900598230b3:0xe12ea023838f9ac5!2sVilla+Dhanika!5m2!4m1!1i2!8m2!3d-8.649411!4d115.139523!9m1!1b1!16s%2Fg%2F11vwn81ch2!3m8!1s0x2dd23900598230b3:0xe12ea023838f9ac5!5m2!4m1!1i2!8m2!3d-8.649411!4d115.139523!16s%2Fg%2F11vwn81ch2?entry=ttu&g_ep=EgoyMDI2MTAxMi4wIKXMDSoASAFQAw%3D%3D',
+  /** Keyless embed of the same place, built from the pin coordinates in mapsUrl. */
+  mapsEmbedUrl:
+    'https://www.google.com/maps?q=-8.649411,115.139523&hl=en&z=16&output=embed',
   heroSlideMs: 5000,
 } as const
 

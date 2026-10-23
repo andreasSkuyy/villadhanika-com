@@ -4,7 +4,6 @@ import { siteConfig } from '../../config/site'
 import Section from '../ui/Section'
 import Eyebrow from '../ui/Eyebrow'
 import Figure from '../ui/Figure'
-import Button from '../ui/Button'
 
 export default function Location() {
   const { eyebrow, heading, paragraphs, thingsToDo, image } = villa.location
@@ -34,12 +33,18 @@ export default function Location() {
           <Figure
             src={image}
             alt={`Aerial view of Villa Dhanika and its pool, surrounded by rice fields in ${siteConfig.address}`}
-            className="aspect-4/3 w-full rounded-2xl object-cover shadow-soft"
+            width={1920}
+            height={2880}
+            className="h-auto w-full rounded-2xl shadow-soft"
           />
-          <Button href={siteConfig.mapsUrl} variant="ghost" className="mt-4">
-            <MapPin className="size-4" aria-hidden="true" />
-            Open in Google Maps
-          </Button>
+          <iframe
+            src={siteConfig.mapsEmbedUrl}
+            title={`Map showing Villa Dhanika in ${siteConfig.address}`}
+            className="mt-4 h-[320px] w-full rounded-2xl border-0 shadow-soft"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
         </div>
       </div>
     </Section>

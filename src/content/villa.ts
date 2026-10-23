@@ -10,11 +10,11 @@ export const villa = {
   /** From spreadsheet [18] Introduction + [7] About Villa. Max 3 paragraphs. */
   about: {
     eyebrow: 'Introduction',
-    heading: 'Contemporary comfort in the heart of Canggu',
+    heading: 'Contemporary Comfort & Spacious Luxury in the Heart of Canggu',
     paragraphs: [
-      'A peaceful sanctuary in the heart of Bali’s popular Canggu area, families and friends will enjoy the best of both worlds at the beautiful Villa Dhanika. Newly built in 2024, this modern, six-bedroom, fully staffed luxury Bali villa overlooks glimmering rice fields, best enjoyed from the Olympic-sized swimming pool or leafy rooftop cabana. It’s also just a short stroll down a quiet lane to all the action of Bali’s hippest neighbourhood. A private chef is available on request, but with some of Bali’s most famous restaurants just minutes away, you may be content to discover for yourself why this district is a food paradise.',
-      'Contemporary, elegant and wonderfully comfortable, Villa Dhanika is the perfect base to immerse yourself in all the fun of Bali’s most popular destination, Canggu. And when you’ve had enough of the buzz, the designer boutiques, the cool cafes and the world-class beach bars, simply retreat to your own private oasis perched on the edge of Bali’s famous rice fields.',
-      'Float your cares away in the Olympic-sized swimming pool, and listen to your favourite music played through Bose speakers indoors and out. Bask in the cool breeze that wafts across the rice fields in the late afternoon; marvel at the streaks of sunset from the rooftop cabana; and then finish your day with a starlit soak in the jacuzzi.',
+      'Located in the heart of Bali’s popular Canggu area, Villa Dhanika is an exceptionally spacious six-bedroom luxury villa, ideal for large families, groups of friends, or multiple families travelling together. Newly built in 2024, this modern, fully staffed villa offers generous indoor and outdoor living spaces, an Olympic-sized swimming pool, a rooftop cabana, and a jacuzzi.',
+      'Designed with comfort and togetherness in mind, we provides plenty of space for guests to gather, relax, and enjoy their holiday while maintaining their own privacy. Whether you’re planning a family getaway, a group holiday, or a special celebration, the villa offers a comfortable and private setting for everyone.',
+      'Just a short stroll down a quiet lane, guests can explore Canggu’s popular restaurants, trendy cafés, designer boutiques, and beach clubs. A private chef is also available upon request for those who prefer to dine in the comfort of the villa.',
     ] as string[],
     image: 'intro.webp',
   },
