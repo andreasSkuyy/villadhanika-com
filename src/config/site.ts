@@ -34,5 +34,6 @@ export const NAV_ITEMS = [
   { label: 'Wellness', href: '#wellness' },
   { label: 'Dining', href: '#dining' },
   { label: 'Location', href: '#location' },
+  { label: 'Reviews', href: '#reviews' },
   { label: 'Contact', href: '#contact' },
 ] as const

@@ -1,5 +1,5 @@
 import type {
-  Facility, Fact, GalleryImage, Offer, Room, StaffRole, Treatment,
+  Facility, Fact, GalleryImage, GuestReview, Offer, Room, StaffRole, Treatment,
 } from '../types/content'
 
 export const villa = {
@@ -126,6 +126,91 @@ export const villa = {
       { icon: 'Utensils', role: 'Villa Attendants', description: 'From serving meals to cleaning and tidying rooms, friendly professional villa attendants are on hand to take care of all your needs.' },
       { icon: 'ShieldCheck', role: 'Security', description: 'Offer 24 hour security at the villa.' },
     ] satisfies StaffRole[],
+  },
+
+  /**
+   * From other_docs/Transkrip_Ulasan_Villa_Dhanika.docx — the guest feedback
+   * forms only. WhatsApp messages and the Google review are deliberately left
+   * out. Published verbatim, suggestions and criticism included, at the
+   * owner's instruction; only capitalisation and punctuation are tidied.
+   */
+  reviews: {
+    eyebrow: 'Guest Book',
+    heading: 'In our guests’ own words',
+    intro: 'Every note below comes from the feedback form guests fill in before they leave. We print them as written — the praise, the suggestions, and the things we are still working on.',
+    items: [
+      {
+        name: 'Joel Mielle',
+        date: '23 June 2024',
+        lines: [
+          'We, Chef Joel and family are honoured to be the first guests at this amazing Bali Villa.',
+          'The Staff (Tari, Eka, Deva, Tia) have been friendly and professional, making our stay exceptional. The appointed chef (Agus) treated us to stunningly delicious meals. Our breakfast were healthy and delicious.',
+          'The Villa has a fantastic huge swimming pool, the rooms are world class 5 star all the way. We can’t recommend Villa Dhanika highly enough.',
+        ],
+      },
+      {
+        name: 'Shen Ning',
+        date: '21 July 2024',
+        lines: [
+          'Villa is stunning! Has beautiful energy. The staff is amazing. We were looked after very well.',
+          'Will def. recommend! Tari was exceptional! 🌟',
+        ],
+        suggestions: [
+          'Pool heated',
+          'Softer / thinner pillows',
+          'Better / bigger menu as food got repetitive & better chef :)',
+        ],
+      },
+      {
+        name: 'Amy Lee',
+        date: '21 July 2024',
+        lines: ['Very nice stay in the villa, thanks to Tari and other staff. Happy days in Bali!'],
+      },
+      {
+        name: 'Weloa Yunisha',
+        date: '6 January 2025',
+        lines: ['Terima kasih. Best banget pokoknya ❤️❤️❤️ Gaada kurangnya ❤️❤️❤️'],
+      },
+      {
+        name: 'Adrian',
+        date: '27 January 2025',
+        lines: [
+          'The service is good 10/10 ⭐⭐⭐⭐⭐',
+          'The food is good.',
+          'The villa is spacious.',
+          'The butler are very friendly 10/10 ⭐⭐⭐⭐⭐',
+          'The pool is big but the floaty sometime fall out of the pool.',
+          'The alley way is very dark.',
+          'The dog is aggressive.',
+          'I like the movie theater.',
+        ],
+      },
+      {
+        name: 'Guest',
+        date: '8 February 2025',
+        lines: ['Thanks for your hospitality, your help for everything!'],
+      },
+      {
+        name: 'Guest',
+        date: '8 February 2025',
+        lines: ['The stay went very well. The staff was very attentive. Thank you for everything, we will recommend you!'],
+      },
+      {
+        name: 'Guest',
+        date: '8 February 2025',
+        lines: ['Thank you for everything, we felt like kings and queens, see you soon I hope! ❤️'],
+      },
+      {
+        name: 'Guest',
+        date: '8 February 2025',
+        lines: ['Thank you so much for the welcome, everything was perfect! The villa is magnificent and so are the staff ❤️'],
+      },
+      {
+        name: 'Fatiana',
+        date: '',
+        lines: ['Very nice stay. Great service from the staff and pretty villa.'],
+      },
+    ] satisfies GuestReview[],
   },
 
   events: {

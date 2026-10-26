@@ -12,6 +12,7 @@ import Wellness from './components/sections/Wellness'
 import Dining from './components/sections/Dining'
 import Location from './components/sections/Location'
 import Team from './components/sections/Team'
+import Reviews from './components/sections/Reviews'
 import Contact from './components/sections/Contact'
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
         <Dining />
         <Location />
         <Team />
+        <Reviews />
         <Contact />
       </main>
       <Footer />

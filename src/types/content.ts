@@ -40,6 +40,18 @@ export interface StaffRole {
   description: string
 }
 
+/**
+ * A single guest feedback form, transcribed verbatim.
+ * `lines` is the review body; `suggestions` holds the "what would have
+ * enhanced our experience" list some forms carry.
+ */
+export interface GuestReview {
+  name: string
+  date: string
+  lines: string[]
+  suggestions?: string[]
+}
+
 export interface GalleryImage {
   image: string
   alt: string
